@@ -10,21 +10,19 @@
 
 <body>
     <!-- Navbar superior para pantallas grandes -->
-    <header class="text-gray-600 bg-blue-900 opacity-80 z-[1000] body-font hidden md:block">
+    <header class="fixed top-0 inset-x-0 text-white bg-[#040C1C]/40 backdrop-blur-lg z-[1000] body-font hidden md:block">
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
             <a class="flex title-font font-medium items-center h-10 w-44 text-gray-900 mb-4 md:mb-0">
-                <!-- <img src="https://www.nicaraguainnova.gob.ni/wp-content/uploads/2024/08/LOGO-CNU-2024.png" alt=""> -->
                 <img src="https://www.nicaraguainnova.gob.ni/wp-content/uploads/2024/10/LOGO-CNU-07.png" alt="">
             </a>
             <nav
-                class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
-                <a class="mr-5 hover:text-gray-900">First Link</a>
-                <a class="mr-5 hover:text-gray-900">Second Link</a>
-                <a class="mr-5 hover:text-gray-900">Third Link</a>
-                <a class="mr-5 hover:text-gray-900">Fourth Link</a>
+                class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400 flex flex-wrap items-center text-base justify-center">
+                <a class="mr-5 hover:text-gray-900">Inicio</a>
+                <a class="mr-5 hover:text-gray-900">Diagrama</a>
             </nav>
             <button
-                class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
+                class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
+                Button
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     class="w-4 h-4 ml-1" viewBox="0 0 24 24">
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -34,7 +32,7 @@
     </header>
 
 
-    <section class="bg-gradient-to-br from-indigo-900 to-green-900 min-h-screen overflow-auto">
+    <section class="bg-gradient-to-br from-indigo-900 to-green-900 min-h-screen overflow-auto pt-20">
         <div class="container max-w-5xl mx-auto px-4">
             <div class="w-4/5">
                 <h1 class="mt-32 text-white text-6xl font-bold">The fastest, most secure dev environment <br /><span
@@ -124,30 +122,23 @@
     <div
         class="fixed inset-x-0 bottom-0 bg-gray-900 text-white flex justify-around items-center h-16 shadow-lg z-[1000] lg:hidden">
         <!-- Link 1 -->
+        <a href="#home" class="flex flex-col items-center text-xs hover:text-blue-500 h-4 w-20 space-y-1">
+            <!-- <a class="flex title-font font-medium items-center h-10 w-44 text-gray-900 mb-4 md:mb-0"> -->
+                <img src="https://www.nicaraguainnova.gob.ni/wp-content/uploads/2024/10/LOGO-CNU-07.png" alt="">
+            <!-- </a> -->
+        </a>
         <a href="#home" class="flex flex-col items-center text-xs hover:text-blue-500 space-y-1">
             <i class="fas fa-home text-xl"></i>
-            <span>Home</span>
+            <span>Inicio</span>
         </a>
 
         <!-- Link 2 -->
         <a href="#search" class="flex flex-col items-center text-xs hover:text-blue-500 space-y-1">
             <i class="fa-solid fa-robot text-xl"></i>
-            <span>ChatBot</span>
-        </a>
-
-        <!-- Link 3 -->
-        <a routerLink="/test" class="flex flex-col items-center text-xs hover:text-blue-500 space-y-1">
-            <i class="fas fa-user-graduate text-xl"></i>
-            <span>Test Vocacional</span>
-        </a>
-
-        <!-- Link 4 -->
-        <a href="#mapa-interactivo" class="flex flex-col items-center text-xs hover:text-blue-500 space-y-1">
-            <i class="fas fa-map-marked-alt text-xl"></i>
-            <span>Mapa Interactivo</span>
+            <span>Diagrama</span>
         </a>
     </div>
-    
+
 </body>
 
 </html>
